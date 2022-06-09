@@ -1,15 +1,25 @@
 import React from 'react';
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <>
-      <div>
-        <h2>login form</h2>
+    <div
+      style={{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <div style={{ width: '40%' }}>
+        <form onSubmit={handleSubmit}></form>
       </div>
       <div>
-        <h3>image here</h3>
+        <img src='image.jpg' width={'40%'} alt='night view of dharan nepal' />
       </div>
-    </>
+    </div>
   );
 };
 
