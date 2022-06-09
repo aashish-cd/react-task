@@ -1,7 +1,11 @@
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+
 function App() {
   return (
-    <div>
-      <h1>hello world</h1>
+    <div className='container'>
+      <Navbar />
+      <Login />
     </div>
   );
 }
